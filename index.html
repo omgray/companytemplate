@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Template 1</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .jumbotron {
+            background-color: rgb(140, 0, 255);
+            color: white;
+        }
+        .btn {
+            background-color: rgb(192, 116, 255);
+            font-weight: 600;
+        }
+        .btn:hover {
+            background-color: rgb(209, 152, 255);
+            color: rgb(140, 0, 255);
+        }
+        .btn:active {
+            background-color: rgb(187, 255, 227);
+            color: rgb(0, 68, 40);
+        }
+        nav.navbar {
+            background-color: rgb(192, 116, 255);
+            color: white;
+            border-style: none;
+        }
+        nav.navbar a {
+            color: white;
+        }
+        .icon-bar {
+            color: white;
+            border: solid 1px white;
+        }
+        form {
+            margin-bottom: 25px;
+        }
+        .company {
+            margin-top: 55px;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+        }
+
+        .about-section {
+        padding: 50px;
+        text-align: center;
+        color: rgb(140, 0, 255);
+        }
+
+        .container {
+        padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .title {
+        color: grey;
+        }
+
+        .button {
+        border: none;
+        margin: 0 auto;
+        width: 20%;
+        outline: 0;
+        padding: 8px;
+        color: white;
+        background-color: rgb(140, 0, 255);
+        text-align: center;
+        cursor: pointer;
+        }
+
+        .button:hover {
+        background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+        }
+        .tagline {
+            font-size: 5rem;
+            font-weight: 800;
+        }
+        .logo {
+            font-size: 200px;
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        .logo-small {
+            color: rgb(140, 0, 255);
+            font-size: 50px;
+        }
+
+            .logo {
+            color: rgb(140, 0, 255);
+            font-size: 200px;
+        }
+        .col-sm-8 {
+            padding: 20px;
+        }
+        .footer {
+          background-color: rgb(140, 0, 255);
+          font-size: 2rem;
+          color: white;
+          margin: 0 auto;
+          padding: 50px;
+        }
+        .footer p {
+          margin: 0;
+        }
+        i {
+          color: white;
+          margin: 0 15pxmerch;
+ e       }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#about">ABOUT</a></li>
+                  <li><a href="#services">SERVICES</a></li>
+                  <li><a href="#portfolio">PORTFOLIO</a></li>
+                  <li><a href="#pricing">PRICING</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- Company Tagline and Email Signup -->
+        <h1 class="company">Company Name</h1>
+        <p>Tagline or mottow or whatever you wanna say.</p>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Email Address">
+                <div class="input-group-btn">
+                    <button type="button" class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="about-section">
+        <span class="tagline">About Us Page</span>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2>About Company Page</h2>
+            <h4>Lorem ipsum..</h4>
+            <p>Lorem ipsum..</p>
+            <button class="btn btn-default btn-lg">Get in Touch</button>
+          </div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal logo"></span>
+          </div>
+        </div>
+      </div>
+    
+      <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="images/team2.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>mike@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="images/team3.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>john@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="about-section">
+        <span class="tagline">Portfolio</span>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut blanditiis culpa facilis minima libero suscipit dolore reprehenderit ut molestiae laboriosam ipsam obcaecati reiciendis et</p>
+      </div>
+
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="column">
+              <div class="content">
+                <img src="images/merch.jpeg" alt="Mountains" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="images/merch.jpeg" alt="Lights" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="images/merch.jpeg" alt="Nature" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="images/merch.jpeg" alt="Mountains" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                  <img src="images/merch.jpeg" alt="Mountains" style="width:100%">
+                  <h3>My Work</h3>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <img src="images/merch.jpeg" alt="Mountains" style="width:100%">
+                  <h3>My Work</h3>
+                  <p>Lorem ipsum..</p>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    
+        <div class="footer text-center justify-content-center">
+            <p>8250 Oak Valley Lane, Worcester, MA 01604 (Address is fake)</p>
+            <p>Website developed and designed by <a href="http://instagram.com/omg.ray">@omg.ray </a>on instagram. Follow for more web design content!</p>
+            <p>Copyright &copy; omgray.co / All rights reserved.</p>
+            <hr>
+            <a href=""><i class="fa fa-github fa-3x"></i></a>
+            <a href=""><i class="fa fa-instagram fa-3x"></i></a>
+            <a href=""><i class="fa fa-twitter fa-3x"></i></a>
+            <a href=""><i class="fa fa-wordpress fa-3x"></i></a>
+            <a href=""><i class="fa fa-snapchat fa-3x"></i></a>
+        </div>
+       </div>
+
+</body>
+</html>
